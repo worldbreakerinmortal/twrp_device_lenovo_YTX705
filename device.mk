@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+LOCAL_PATH := device/lenovo/YTX705
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=msm8937 \
     ro.hardware.gatekeeper=msm8937
