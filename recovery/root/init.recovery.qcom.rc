@@ -44,10 +44,10 @@ on init
   
 
     start hwservicemanager
-    start prepdecrypt
+    start predecrypt
     setprop crypto.ready 1
 
-service prepdecrypt /sbin/prepdecrypt.sh
+service predecrypt /sbin/predecrypt.sh
     oneshot
     user root
     group root
