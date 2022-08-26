@@ -1,5 +1,5 @@
-FDEVICE="chopin"
-DEVICE_PATH="device/xiaomi/chopin"
+FDEVICE="YTX705F"
+DEVICE_PATH="device/lenovo/YTX705"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep $FDEVICE)
@@ -36,7 +36,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_DELETE_AROMAFM=1
 	export OF_USE_GREEN_LED=0
 	export FOX_ENABLE_APP_MANAGER=1
-	export OF_TARGET_DEVICES="chopin,chopinin"
+	export OF_TARGET_DEVICES="YTX705,YTX705F"
 	
 	# OTA
 	export OF_KEEP_DM_VERITY_FORCED_ENCRYPTION=1
