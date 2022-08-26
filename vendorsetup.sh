@@ -42,7 +42,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export DEVICE_PATH="device/lenovo/YTX705"
     export INCLUDE_PATH="$DEVICE_PATH/include"
 
-	export FOX_9.0=1
 	export OF_PATCH_AVB20=1
 	export OF_USE_MAGISKBOOT=1
 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
