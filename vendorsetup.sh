@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="A6020"
+FDEVICE="YTX705"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep $FDEVICE)
@@ -79,8 +79,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_ENABLE_APP_MANAGER=1
 
     # A6020 Specific
-	export TARGET_DEVICE_ALT="A6020,A6020a40,A6020a41,A6020a46,A6020l36,A6020l37,K32c36,k5,k5_plus,vibe_k5"
-    export OF_TARGET_DEVICES="A6020,A6020a40,A6020a41,A6020a46,A6020l36,A6020l37,K32c36,k5,k5_plus,vibe_k5"
+	export TARGET_DEVICE_ALT="YTX705,YTX705F,YTX705X"
+    export OF_TARGET_DEVICES="YTX705,YTX705F,YTX705X"
     export FOX_USE_LZMA_COMPRESSION=1
     export OF_ALLOW_DISABLE_NAVBAR=0
 
