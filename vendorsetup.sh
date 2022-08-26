@@ -39,7 +39,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 
     # Device Tree Path | Include Path
-    export DEVICE_PATH="device/lenovo/A6020"
+    export DEVICE_PATH="device/lenovo/YTX705"
     export INCLUDE_PATH="$DEVICE_PATH/include"
 
 	export FOX_R11=1
@@ -78,7 +78,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_DISABLE_APP_MANAGER=0
     export FOX_ENABLE_APP_MANAGER=1
 
-    # A6020 Specific
+    # YTX705 Specific
 	export TARGET_DEVICE_ALT="YTX705,YTX705F,YTX705X"
     export OF_TARGET_DEVICES="YTX705,YTX705F,YTX705X"
     export FOX_USE_LZMA_COMPRESSION=1
