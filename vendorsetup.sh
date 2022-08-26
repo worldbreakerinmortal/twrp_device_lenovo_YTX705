@@ -1,0 +1,2 @@
+add_lunch_combo omni_TBX304-eng
+add_lunch_combo omni_TBX304-userdebug
