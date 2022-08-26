@@ -1,2 +1,2 @@
-add_lunch_combo omni_TBX304-eng
-add_lunch_combo omni_TBX304-userdebug
+add_lunch_combo omni_YTX705-eng
+add_lunch_combo omni_YTX705-userdebug
