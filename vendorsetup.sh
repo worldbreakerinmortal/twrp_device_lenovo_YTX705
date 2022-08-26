@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="A6020"
+FDEVICE="YTX705"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep $FDEVICE)
@@ -39,10 +39,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 
     # Device Tree Path | Include Path
-    export DEVICE_PATH="device/lenovo/A6020"
+    export DEVICE_PATH="device/lenovo/YTX705"
     export INCLUDE_PATH="$DEVICE_PATH/include"
 
-	export FOX_R11=1
+	export FOX_9.0=1
 	export OF_PATCH_AVB20=1
 	export OF_USE_MAGISKBOOT=1
 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
@@ -60,7 +60,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
     # About Settings
     export OF_MAINTAINER="Sushrut Gupta"
-    export FOX_VERSION="R11.1_1"
+    export FOX_VERSION="fox_9.0"
     export OF_MAINTAINER_AVATAR="$INCLUDE_PATH/Sushrut1101.png"
     export FOX_BUILD_TYPE="Stable"
 
@@ -78,9 +78,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_DISABLE_APP_MANAGER=0
     export FOX_ENABLE_APP_MANAGER=1
 
-    # A6020 Specific
-	export TARGET_DEVICE_ALT="A6020,A6020a40,A6020a41,A6020a46,A6020l36,A6020l37,K32c36,k5,k5_plus,vibe_k5"
-    export OF_TARGET_DEVICES="A6020,A6020a40,A6020a41,A6020a46,A6020l36,A6020l37,K32c36,k5,k5_plus,vibe_k5"
+    # YTX705 Specific
+	export TARGET_DEVICE_ALT="YTX705"
+    export OF_TARGET_DEVICES="YTX705"
     export FOX_USE_LZMA_COMPRESSION=1
     export OF_ALLOW_DISABLE_NAVBAR=0
 
