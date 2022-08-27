@@ -124,6 +124,7 @@ PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
+TW_ROTATION := 90
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 #TW_INCLUDE_RESETPROP := true
